@@ -1,5 +1,5 @@
 """
-WSGI config for austral project.
+WSGI config for rent-a-car project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'austral.settings')
+# Ajusta el nombre del módulo de configuración según el nombre de tu proyecto Django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rent_a_car.settings')
 
 application = get_wsgi_application()

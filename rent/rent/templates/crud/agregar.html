@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
+    <title>Agregar</title>
+</head>
+<body>
+    <h1>Agregar Nuevos Vehiculos/clientes</h1>
+    <form action="agregar" method="post">
+        {% csrf_token %}
+
+        <pre>id_auto:                        <input type="text" name="idauro"></pre>
+        <pre>Nombre:                    <input type="text" name="nombre"></pre>
+        <pre>annio:                  <input type="date" name="año"></pre>
+        <pre>Marca:                      <input type="text" name="marca"></pre>
+        <pre>color:                      <select name="color">
+            {% for g in genero %}
+                <option value="{{s.id_genero}}">{{g.genero}}</option>
+            {% endfor %}</select></pre>
+        <input type="submit" name="opcion" value="Agregar">
+
+    </form>
+    <br></bra><a href="admin">Volver a Administración</a>
+
+    <div id="idMensaje">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+</html>

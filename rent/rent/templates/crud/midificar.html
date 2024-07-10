@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar</title>
+</head>
+<body>
+    <h1>Modificar datos</h1>
+
+    {% if Auto %}
+    <form action="modificar" method="post">
+        {% csrf_token %}
+
+        <pre>id_auto:                <input type="text" name="idauto" value="{{Auto.id_auto}}" readonly></pre>
+        <pre>Nombre:                 <input type="text" name="nombre" value="{{auto.nombre}}"></pre>
+        <pre>marca:                  <input type="text" name="Marca" value="{{Auto.Marca}"></pre>
+        <pre>annio:                  <input type="date" name="añoc" value="{{Auto.annio:'Y-m-d'}}"></pre>
+        <pre>color:                  <select name="text" value="{{Auto.color}}">
+            {% for a in Auto %}
+                <option value="{{a.id_auto}}" selected>{{a.id_auto}}</option>  
+            {% endfor %}</select></pre>
+        <input type="submit" name="opcion" value="Actualizar datos">
+
+    </form>
+    {% endif %}
+    <br></bra><a href="../admin">Volver a Administración</a>
+</body>
+</html>
