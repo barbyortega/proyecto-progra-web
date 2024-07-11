@@ -26,7 +26,7 @@ class Auto(models.Model):
     Marca             = models.CharField(primary_key=True, max_length=10)
     nombre            = models.CharField(max_length=20)
     color             = models.CharField(max_length=20)
-    cantidad_pasajeros= models.CharField(max_length=20)
+    cant_pasajeros= models.CharField(max_length=20)
     annio             = models.DateField(blank=False, null=False) 
     id_auto           = models.CharField(max_length=20) 
     tipo_vehiculo     = models.CharField(max_length=45)

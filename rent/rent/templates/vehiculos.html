@@ -29,7 +29,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <!-- Enlaces generados por Django -->
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'index' %}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="vehiculos.html">Vehículos</a>
@@ -55,9 +55,9 @@
             <!-- Sección de Sedan -->
             <div class="col h-100">
                 <div class="card">
-                    <img src="../static/imagenes/sedan6.jpg" alt="sedan" width=370px height=200px>
+                    <img src="../static/imagenes/sedan6.jpg" alt="sedan" width=390px height=200px>
                     <div class="card-body">
-                        <h5 class="card-title">Sedan</h5>
+                        <h5 class="card-title">Kia Rio 4</h5>
                         <p class="card-text">Encuentra el sedan perfecto para tu viaje con Austral Rent a Car.</p>
                     </div>
                 </div>
@@ -65,9 +65,9 @@
             <!-- Sección de SUV -->
             <div class="col h-100">
                 <div class="card">
-                    <img src="../static/imagenes/suv4.jpg" alt="suv" width=350px height=200px>
+                    <img src="../static/imagenes/suv4.jpg" alt="suv" width=340px height=200px>
                     <div class="card-body">
-                        <h5 class="card-title">SUV</h5>
+                        <h5 class="card-title">Chery Tiggo 4</h5>
                         <p class="card-text">Explora destinos fuera de la carretera con nuestros SUVs.</p>
                     </div>
                 </div>
@@ -75,20 +75,30 @@
             <!-- Sección de Minivan -->
             <div class="col h-100">
                 <div class="card">
-                    <img src="../static/imagenes/minivan.jpg" alt="minivan" width=300px height=200px>
+                    <img src="../static/imagenes/minivan3.webp" alt="minivan" width=300px height=200px> 
                     <div class="card-body">
-                        <h5 class="card-title">Minivan</h5>
+                        <h5 class="card-title">Kia sedona</h5>
                         <p class="card-text">Viaja cómodo y con espacio con nuestras minivans en arriendo.</p>
+                        <p class="card-text">Color: Blanco Invierno
+                            Valor: $45.000 por dia
+                            pasajeros: 7
+                        </p>
                     </div>
                 </div>
             </div>
             <!-- Sección de Camioneta -->
             <div class="col h-100">
                 <div class="card">
-                    <img src="../static/imagenes/camioneta.jpeg" alt="camioneta" width=300px height=200px >
+                    <img src="../static/imagenes/camioneta2.png" alt="camioneta" width=350px height=200px>
                     <div class="card-body">
-                        <h5 class="card-title">Camioneta</h5>
-                        <p class="card-text">Disfruta de la emoción de la carretera con nuestras camionetas.</p>
+                        <h5 class="card-title">Toyota Hilux</h5>
+                        <p class="card-text">Disfruta de la emoción de la carretera con nuestras camionetas.
+                        <p class="card-text">Color: Blanco Invierno
+                                             Valor: $45.000 por dia
+                                             pasajeros: 5
+
+                        </p>                   
+                        </p>
                     </div>
                 </div>
             </div>
